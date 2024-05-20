@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import DataPark from "../assets/Group.png"
+import DataPark from "../../assets/Group.png"
 import { FaFacebookF } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {

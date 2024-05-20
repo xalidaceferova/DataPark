@@ -2,16 +2,16 @@ import React, { useEffect } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { Form, FormMessage } from "../components/ui/form";
+import { Form, FormMessage } from "../common/components/ui/form";
 import {
   FormControl,
   FormDescription,
   FormField,
   FormItem,
   FormLabel,
-} from "@/components/ui/form";
-import { Button } from "@/components/ui/button";
-import { Input } from "../components/ui/input";
+} from "@/common/components/ui/form";
+import { Button } from "@/common/components/ui/button";
+import { Input } from "../common/components/ui/input";
 import { RiMapPinLine } from "react-icons/ri";
 import { MdOutlineTableView } from "react-icons/md";
 import { MdCastForEducation } from "react-icons/md";
@@ -21,7 +21,7 @@ import { CiDollar } from "react-icons/ci";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoBagOutline } from "react-icons/io5";
 import { IoIosLink } from "react-icons/io";
-import { Textarea } from "@/components/ui/textarea";
+import { Textarea } from "@/common/components/ui/textarea";
 import { postData } from "@/services/api/queries";
 import toast, { Toaster } from "react-hot-toast";
 const formSchema = z.object({

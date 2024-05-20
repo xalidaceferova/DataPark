@@ -2,8 +2,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Career from './pages/Career'
 import Detail from './pages/Detail'
 import Addform from './pages/Addform'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import Navbar from './common/components/Navbar'
+import Footer from './common/components/Footer'
 
 function App() {
 

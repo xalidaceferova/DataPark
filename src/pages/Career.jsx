@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import useSWR from 'swr'
 import Jobs from "../assets/Jobs.png"
-import Navbar from '@/components/Navbar'
+import Navbar from '@/common/components/Navbar'
 const Career = () => {
   const [search,setSearch]=useState([])
     const {data}=useSWR("/career/vacancy/",getData)

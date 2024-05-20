@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
-import DataPark from "../assets/Group.png"
+import DataPark from "../../assets/Group.png"
 
 import { Button } from './ui/button'
 import { Input } from './ui/input'

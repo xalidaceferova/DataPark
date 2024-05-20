@@ -6,7 +6,7 @@ import { IoIosCalendar } from "react-icons/io";
 import { IoMdEye } from "react-icons/io";
 import { IoPersonOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
-import { Button } from '@/components/ui/button';
+import { Button } from '@/common/components/ui/button';
 const Detail = () => {
   const {id}=useParams()
   const {data}=useSWR(`/career/vacancy/${id}/`,getData)
