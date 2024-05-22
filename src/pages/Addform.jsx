@@ -73,7 +73,7 @@ const Addform = () => {
     }
   });
   const onSubmit = async (values) => {
-    await postData("/career/vacancy/", values)
+    await postData("/r/vacancy/", values)
       .then((data) => {
         console.log("Post isteği başarıyla tamamlandı:", data);
         toast.success("post job successfully");
