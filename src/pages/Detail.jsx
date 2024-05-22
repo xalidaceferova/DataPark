@@ -22,7 +22,7 @@ const Detail = () => {
     <div className=' ml-[160px] mt-20'>
       <h1 className='text-[#F8981F] font-secondfont text-[24px]'>{data.category} ({data.min_salary}$)</h1>
     </div>
-    <div className='flex mx-40 mt-7'>
+    <div className='lg:flex mx-40 mt-7'>
       <div className='w-3/4 border bg-[#F0F2F3] rounded-[7px] mb-6'>
         <div>
          <div className='w-[200px] mt-7'>
@@ -67,7 +67,7 @@ const Detail = () => {
           </ul>
         </div>
       </div>
-      <div className='w-2/4 h-[401px] border ml-6 bg-[#F0F2F3] rounded-[7px]'>
+      <div className=' h-[401px] border ml-6 bg-[#F0F2F3] rounded-[7px]'>
         <div className=' flex w-[316px] h-[47px] gap-[22px] mt-5 ml-2'>
           <div className=' w-1/2 flex ml-5'>
             <IoIosCalendar className='text-[#F9A220]' size={25} />

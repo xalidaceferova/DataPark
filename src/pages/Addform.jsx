@@ -94,7 +94,7 @@ const Addform = () => {
   return (
     <>
       <section className="flex items-center justify-center">
-        <div className="w-[1120px] h-[804px] bg-[#ECEDED] mt-10 mb-44">
+        <div className="max-w-screen-xl w-full px-4 md:px-8 mt-10 mb-44">
           <Form {...form}>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-8 ">
               <div className=" ml-8 mt-5 ">
@@ -106,7 +106,7 @@ const Addform = () => {
                   data-driven capabilities!
                 </p>
               </div>
-              <div className="flex gap-6 mx-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="w-1/3 h-[400px] flex flex-col justify-between">
                   <FormField
                     control={form.control}
@@ -399,7 +399,7 @@ const Addform = () => {
                 />
               </div>
               <div className="w-[1120px] flex justify-end">
-                <Button className="w-[265px] h-[46px]" type="submit">
+                <Button className="w-full md:w-auto" type="submit">
                   Submit
                 </Button>
               </div>
