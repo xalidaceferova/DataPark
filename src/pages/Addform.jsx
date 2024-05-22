@@ -73,16 +73,11 @@ const Addform = () => {
     }
   });
   const onSubmit = async (values) => {
-    await postData("/r/vacancy/", values)
+    await postData("/career/vacancy/", values)
       .then((data) => {
         console.log("Post isteği başarıyla tamamlandı:", data);
         toast.success("post job successfully");
-        if (typeof reset === 'function') {
           reset();
-      } else {
-          console.error("Reset function is not available");
-      }
-       
       })
       .catch((error) => {
         console.error("Post isteği başarısız oldu:", error);
@@ -94,7 +89,7 @@ const Addform = () => {
   return (
     <>
       <section className="flex items-center justify-center">
-        <div className="max-w-screen-xl w-full px-4 md:px-8 mt-10 mb-44">
+        <div className="px-4 md:px-8 mt-10 mb-44 bg-[#ECEDED]">
           <Form {...form}>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-8 ">
               <div className=" ml-8 mt-5 ">
@@ -106,15 +101,15 @@ const Addform = () => {
                   data-driven capabilities!
                 </p>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="w-1/3 h-[400px] flex flex-col justify-between">
+              <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 ">
+                <div className="w-full md:w-1/3 flex flex-col gap-3 justify-between">
                   <FormField
                     control={form.control}
                     name="header"
                     render={({ field }) => (
                       <>
                         <FormItem>
-                          <div className="flex gap-2">
+                          <div className=" w-[200px] flex gap-2">
                             <RiMapPinLine
                               className="text-[#355474]"
                               size={20}
@@ -192,10 +187,11 @@ const Addform = () => {
                   <FormField
                     control={form.control}
                     name="posting_date"
+
                     render={({ field }) => (
                       <>
                         <FormItem>
-                          <div className="flex gap-2">
+                          <div className=" w-[200px] flex gap-2">
                             <IoIosCalendar
                               className="text-[#355474]"
                               size={20}
@@ -216,7 +212,7 @@ const Addform = () => {
                     )}
                   />
                 </div>
-                <div className="w-1/3 h-[300px]  flex flex-col justify-between">
+                <div className="w-full md:w-1/3 flex flex-col justify-around">
                   <FormField
                     control={form.control}
                     name="position"
@@ -296,7 +292,7 @@ const Addform = () => {
                     )}
                   />
                 </div>
-                <div className="w-1/3 h-[300px]  flex flex-col justify-between">
+                <div className="w-full md:w-1/3 flex flex-col justify-around">
                   <FormField
                     control={form.control}
                     name="job_type"
@@ -398,8 +394,8 @@ const Addform = () => {
                   )}
                 />
               </div>
-              <div className="w-[1120px] flex justify-end">
-                <Button className="w-full md:w-auto" type="submit">
+              <div className="w-[1120px] flex justify-end  border">
+                <Button  variant="sent" size="send" type="submit">
                   Submit
                 </Button>
               </div>

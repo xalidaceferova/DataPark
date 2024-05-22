@@ -19,7 +19,8 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         login:"font-customfont text-[#F7941D] text-[16px] font-medium",
-        apply:"border border-[#F9A220] text-[#F9A220] text-[16px] font-medium font-secondfont ml-1 mt-[40px]"
+        apply:"border border-[#F9A220] text-[#F9A220] text-[16px] font-medium font-secondfont ml-1 mt-[40px]",
+        sent:"bg-[#F7941E] font-customfont font-medium text-[16px] text-white "
       },
       size: {
         default: "w-[99px] h-[39px] rounded-[7px]",
@@ -27,7 +28,8 @@ const buttonVariants = cva(
         lg: "h-11 rounded-md px-8",
         icon: "h-10 w-10",
         search:"w-[170px] h-[45px] rounded-[7px]",
-        apeal:"w-[316px] h-[45px] rounded-[7px]"
+        apeal:"w-[316px] h-[45px] rounded-[7px]",
+        send:"w-[265px] h-[46px]"
       },
     },
     defaultVariants: {
